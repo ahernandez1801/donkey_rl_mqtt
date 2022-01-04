@@ -21,5 +21,4 @@ pyzmq==22.3.0
 simple_pid==1.0.1
 stable_baselines==2.10.2
 tensorflow==2.7.0
-tensorflow_gpu==1.14.0
 vae==0.1
