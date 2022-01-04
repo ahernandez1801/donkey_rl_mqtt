@@ -11,7 +11,7 @@ import gym
 import numpy as np
 from gym import error, spaces, utils
 
-from .parts.remote_controller import DonkeyRemoteContoller
+from .remote_controller import DonkeyRemoteContoller
 
 
 class DonkeyRealEnv(gym.Env):

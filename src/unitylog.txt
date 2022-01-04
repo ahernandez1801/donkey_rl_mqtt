@@ -19,14 +19,14 @@ L_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_
 blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_
 NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_N
 V_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 7293800
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 21506392
 Begin MonoManager ReloadAssembly
-- Completed reload, in  0.072 seconds
+- Completed reload, in  0.041 seconds
 Default vsync count 0
 requesting resize 833 x 445
 resizing window to 833 x 445
 Desktop is 1920 x 1080 @ 85 Hz
-UnloadTime: 2.789318 ms
+UnloadTime: 0.444911 ms
 SDSandbox Server starting.
 
 Server Listening on: 0.0.0.0:9091
@@ -54,8 +54,8 @@ SocketException: Address already in use
   at SandboxServer.Start () [0x0005e] in <88058a65560648c6b9fc4cb9a7e09117>:0 
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 7f43937fe700 -> priority: 1 
-  Thread -> id: 7f4392ffd700 -> priority: 1 
+  Thread -> id: 7fe79adfc700 -> priority: 1 
+  Thread -> id: 7fe79a5fb700 -> priority: 1 
 Waiting for a connection...
 
 client connected.
@@ -64,26 +64,8 @@ generated_track
 
 loaded scene
 
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
-
-Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 15)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
-
-Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
-
-Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 8)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
-
 Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.041229 ms
+UnloadTime: 6.088147 ms
 JustOne removing instance.MainThDisp
 
 JustOne removing instance.SandboxServer
@@ -96,11 +78,17 @@ Added timer
 
 car loaded.
 
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3153.
+Total: 4.836951 ms (FindLiveObjects: 0.106210 ms CreateObjectMapping: 0.045732 ms MarkObjects: 0.861707 ms  DeleteObjects: 3.823081 ms)
+
 Got car config message
 
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3152.
-Total: 213.437207 ms (FindLiveObjects: 0.109734 ms CreateObjectMapping: 0.045367 ms MarkObjects: 2.778672 ms  DeleteObjects: 210.503030 ms)
-
 Setting car config.
+
+Server stopped.
+
+Exception on recv. Connection dropped.
+
+Server stopped.
 

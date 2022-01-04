@@ -8,8 +8,8 @@ desc: Control a remote donkey robot over network
 import time
 import cv2 as cv
 import numpy as np
-from donkeycar.parts.network import MQTTValueSub, MQTTValuePub
-from donkeycar.parts.image import JpgToImgArr
+from .parts.network import MQTTValueSub, MQTTValuePub
+from .parts.image import JpgToImgArr
 
 frame = np.zeros((240, 320, 3), np.uint8)
 class DonkeyRemoteContoller:
@@ -41,7 +41,6 @@ class DonkeyRemoteContoller:
         self.img = self.jpgToImg.run(jpg)
         npimg = np.frombuffer(self.img, dtype=np.uint8)
         frame = cv.imdecode(npimg,1)
-        cv.imshow("Stream", frame)
         return self.img
 
 

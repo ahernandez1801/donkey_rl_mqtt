@@ -11,7 +11,6 @@ numpy==1.19.5
 opencv_python==4.5.3.56
 paho_mqtt==1.6.1
 pandas==1.1.5
-Pillow==9.0.0
 pygame==2.0.1
 pytablewriter==0.64.1
 PyYAML==6.0

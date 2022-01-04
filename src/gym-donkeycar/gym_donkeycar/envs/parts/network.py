@@ -307,14 +307,14 @@ class MQTTValuePub(object):
     Use MQTT to send values on network
     pip install paho-mqtt
     '''
-    def __init__(self, name, broker="localhost"):
+    def __init__(self, name, broker="iot.eclipse.org"):
         from paho.mqtt.client import Client
 
         self.name = name
         self.message = None
         self.client = Client()
         print("connecting to broker", broker)
-        self.client.connect(broker, 8884)
+        self.client.connect(broker)
         self.client.loop_start()
         print("connected.")
 
@@ -334,7 +334,7 @@ class MQTTValueSub(object):
     Use MQTT to recv values on network
     pip install paho-mqtt
     '''
-    def __init__(self, name, broker="22837ea9a1424fb3b95553310d37c0b5.s1.eu.hivemq.cloud", def_value=None):
+    def __init__(self, name, broker="iot.eclipse.org", def_value=None):
         from paho.mqtt.client import Client
 
         self.name = name
@@ -342,7 +342,7 @@ class MQTTValueSub(object):
         self.client = Client(clean_session=True)
         self.client.on_message = self.on_message
         print("(clean_session) connecting to broker", broker)
-        self.client.connect(broker, 8884)
+        self.client.connect(broker)
         self.client.loop_start()
         self.client.subscribe(self.name)
         self.def_value = def_value

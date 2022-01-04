@@ -1,5 +1,5 @@
 import numpy as np
-from donkeycar.gym.remote_controller import DonkeyRemoteContoller
+from .remote_controller import DonkeyRemoteContoller
 from config import INPUT_DIM, ROI, THROTTLE_REWARD_WEIGHT, MAX_THROTTLE, MIN_THROTTLE, \
     REWARD_CRASH, CRASH_SPEED_WEIGHT
 
